@@ -357,12 +357,13 @@ Use this checklist for your actual production jobs:
 - Reduce data size
 - Use alternative paths
 
-### Issue: "Delta Lake not available"
+### Issue: "Delta Lake not available" or "CONFIG_NOT_AVAILABLE"
 **Solution:**
+- In Databricks, Delta Lake is pre-configured - don't set spark.sql.extensions
 - Ensure DBR 8.0+ runtime
-- Check cluster configuration
-- Verify Delta Lake is enabled
-- Restart cluster
+- The notebooks are updated to work in Databricks by default
+- If using outside Databricks, you'll need to install Delta Lake separately
+- Restart cluster if issues persist
 
 ---
 
