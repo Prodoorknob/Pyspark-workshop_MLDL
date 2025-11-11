@@ -39,15 +39,15 @@ A hands-on 2-hour workshop designed to teach essential PySpark skills through bu
 
 ```
 PySpark-Workshop/
-├── README.md                              # This file
-├── WORKSHOP_GUIDE.md                      # Complete workshop guide
-├── DATABRICKS_FREE_EDITION_GUIDE.md       # Concise Databricks guide
-├── PYSPARK_CHEATSHEET.md                  # Quick reference guide
+├── README.md                              # This file (workshop overview)
+├── WORKSHOP_GUIDE.md                      # Complete instructor guide with timing & tips
+├── DATABRICKS_FREE_EDITION_GUIDE.md       # Detailed setup guide for participants
+├── PYSPARK_CHEATSHEET.md                  # Quick reference for PySpark operations
 │
-├── Part1_PySpark_Speedrun.ipynb           # Part 1: The PySpark Speedrun (20 min)
-├── Part2_Data_Engineer_Toolkit.ipynb      # Part 2: Data Engineer Toolkit (35 min)
-├── Part3_ML_Capstone_Pipeline.ipynb       # Part 3: ML Capstone Pipeline (40 min)
-└── Part4_Real_Time_Prediction.ipynb       # Part 4: Real-Time Prediction (15 min)
+├── Part1_PySpark_Speedrun.ipynb           # Part 1: PySpark Basics (20 min)
+├── Part2_Data_Engineer_Toolkit.ipynb      # Part 2: Data Engineering (35 min)
+├── Part3_ML_Capstone_Pipeline.ipynb       # Part 3: ML Pipeline (40 min)
+└── Part4_Real_Time_Prediction.ipynb       # Part 4: Real-Time Streaming (15 min)
 ```
 
 ---
