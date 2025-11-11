@@ -142,8 +142,16 @@ By the end of this workshop, participants will be able to:
 
 Run the setup cells to verify:
 - Spark session initialized
+- Workshop data path created (user-specific location)
 - Sample data created successfully
 - Delta Lake enabled (for advanced notebook)
+
+**Note on Data Storage:**
+The notebooks automatically create a user-specific workspace path that works with restricted DBFS access:
+- Primary path: `dbfs:/user/{your_username}/workshop_data/`
+- Alternative: `/dbfs/FileStore/workshop_data/{your_username}/` (if primary fails)
+
+This ensures the workshop works in secure Databricks environments where public DBFS root (`/tmp`) is disabled.
 
 ---
 
@@ -342,6 +350,17 @@ Use this checklist for your actual production jobs:
 - Check cluster utilization
 - Review Spark UI for bottlenecks
 - Add more workers if needed
+
+### Issue: "Public DBFS root is disabled" or "Access denied on /tmp"
+**Solution:**
+- This is a security feature in Databricks workspaces
+- The notebooks now automatically use user-specific paths
+- Data is stored in `dbfs:/user/{username}/workshop_data/`
+- If issues persist, uncomment the alternative path in the setup cell:
+  ```python
+  # base_path = f"/dbfs/FileStore/workshop_data/{username}"
+  ```
+- Contact your workspace admin if both paths fail
 
 ### Issue: "Import notebooks fails"
 **Solution:**
